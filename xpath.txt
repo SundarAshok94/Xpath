@@ -1,0 +1,38 @@
+Advanced xPath:
+1. Parent to Child:
+basicXPathOfParent/tagNameOfChild[@attributeName='attributeValue']
+//p[@class='top']/input[@id='username']
+
+2. Child to Parent:
+basicXPathOfChild/parent::parentTagName[text()='value']
+//input[@id='username']/parent::p[@class='top']
+
+3. GrandParent to GrandChild:
+basicXPathOfGrandParent//childTagName
+//form[@id='login']//input[@name='USERNAME']
+
+4. GrandChild to GrandParent:
+basicXPathOfGrandChild/ancestor::grandParentTagName
+//input[@name='USERNAME']/ancestor::form[@id='login']
+
+5. ElderSibling to YoungerSibling:
+basicXPathOfElderSibling/following-sibling::YoungerSiblingTagName
+//label[text()='Username']/following-sibling::input[@id='username']
+
+6. YoungerSiblingToElderSibling
+basicXPathOfYoungerSibling/preceding-sibling::ElderSiblingTagName
+//input[@id='username']/preceding-sibling::label
+
+7. ElderCousinToYoungerCousin
+basicXPathofElderCousin/following::YoungerCousinTagName
+//input[@id='username']/following:👆🏻
+
+
+prop = new proerties
+fileinputstream fi  = new file inpitstream("");
+prop.load(fi);
+
+String browser = 
+
+if()
+prop.getproperties()
